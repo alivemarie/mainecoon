@@ -1,0 +1,268 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+    font-weight: normal;
+    background-color: #151313;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.section__title {
+    font-family: Yeseva One, sans-serif;
+
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.section__lead {
+    font-family: Roboto, sans-serif;
+
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+
+    color: #A07B50;
+}
+
+.btn {
+    display: block;
+    width: 200px;
+    height: 52px;
+    padding: 18px 37px;
+    border: 0.5px solid #A07B50;
+    box-sizing: border-box;
+
+    font-family: Roboto, sans-serif;
+
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #FFFFFF;
+
+}
+
+.pets,
+.breed,
+.faq,
+.reviews {
+    background-color: #1F1C1D;
+}
+
+/* Intro */
+
+.intro-info {
+
+}
+
+.intro__city {
+    font-family: Roboto, sans-serif;
+
+    font-size: 16px;
+    line-height: 24px;
+
+    color: #A07B50;
+}
+
+.intro__title {
+    font-family: Yeseva One, sans-serif;
+
+    font-size: 52px;
+    line-height: 60px;
+
+    color: #FFFFFF;
+}
+
+.intro__lead {
+    font-family: Roboto, sans-serif;
+
+    font-size: 16px;
+    line-height: 24px;
+
+    color: #A07B50;
+}
+
+/* Pets */
+
+.pets__tab {
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+
+    color: rgba(255, 255, 255, 0.2);
+
+}
+
+.pets__tab-active {
+    color: #FFFFFF;
+}
+
+/* Breed */
+
+.breed__features-item {
+    font-family: Roboto, sans-serif;
+
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: right;
+
+    color: #FFFFFF;
+}
+
+/* Advantages */
+
+.advantages__link {
+    font-family: Roboto, sans-serif;
+
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+
+    color: #FFFFFF;
+
+}
+
+/* Care */
+
+.care__link-title {
+    font-family: Roboto, sans-serif;
+
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 26px;
+
+    color: #A07B50;
+}
+
+.care__link-description {
+    font-family: Roboto, sans-serif;
+
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 23px;
+
+    color: #FFFFFF;
+}
+
+/* Team */
+
+.team__member-title {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+
+    color: #A07B50;
+}
+
+.team__member-jobTitle {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+
+    color: #A07B50;
+}
+
+.team__member-quote {
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 25px;
+
+    color: rgba(255, 255, 255, 0.72);
+}
+
+/* FAQ */
+
+.faq__question {
+    font-family: Roboto, sans-serif;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #DDD0C3;
+
+    background-color: transparent;
+    border: none;
+}
+
+.faq__answer {
+    font-family: Roboto, sans-serif;
+
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 154%;
+
+    color: #DDD0C3;
+}
+
+/* Reviews */
+
+.review__username {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+
+    color: #FFFFFF;
+}
+
+.review__text {
+    font-family: Roboto, sans-serif;
+
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 23px;
+
+    color: rgba(255, 255, 255, 0.72);
+}
+
+.review__datetime {
+    font-family: Roboto, sans-serif;
+
+    font-size: 12px;
+    line-height: 19px;
+
+    color: rgba(160, 123, 80, 0.94);
+}
+
+/* Footer */
+
+.footer__link-address {
+    font-family: Roboto, sans-serif;
+
+    font-size: 14px;
+    line-height: 27px;
+
+    color: rgba(253, 242, 230, 0.83);
+
+}
+
+.footer__link-tel {
+    font-family: Roboto, sans-serif;
+
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 27px;
+
+    color: #FDF2E6;
+}
