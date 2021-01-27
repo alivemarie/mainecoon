@@ -11,7 +11,9 @@
 <body>
 <header class="main-header">
     <div class="header__logo logo">
-        <img class="logo" src="" alt="Логотип питомника">
+        <svg class="icon">
+            <use xlink:href="images/icons/sprite.svg#crown"></use>
+        </svg>
     </div>
 </header>
 
@@ -26,13 +28,28 @@
         </div>
         <ul class="social intro__social">
             <li class="social__item">
-                <a href="#" class="social__link">ВКонтакте</a>
+                <a href="#" class="social__link">
+                    <span class="visually-hidden">Вконтакте</span>
+                    <svg class="icon">
+                        <use xlink:href="images/icons/sprite.svg#icon-vk"></use>
+                    </svg>
+                </a>
             </li>
             <li class="social__item">
-                <a href="#" class="social__link">Твиттер</a>
+                <a href="#" class="social__link">
+                    <span class="visually-hidden">Твиттер</span>
+                    <svg class="icon">
+                        <use xlink:href="images/icons/sprite.svg#icon-twitter"></use>
+                    </svg>
+                </a>
             </li>
             <li class="social__item">
-                <a href="#" class="social__link">Фейсбук</a>
+                <a href="#" class="social__link">
+                    <span class="visually-hidden">Фейсбук</span>
+                    <svg class="icon">
+                        <use xlink:href="images/icons/sprite.svg#icon-fb"></use>
+                    </svg>
+                </a>
             </li>
         </ul>
     </section>
@@ -64,13 +81,13 @@
             <div class="pets__photo-slider">
                 <div class="pets__photo-slide" id="pets-tab-content-1">
                     <div class="gallery__item gallery__item-top">
-                        <img src="" alt="">
+                        <img src="./images/pets-list-1-desktop@1x.png" alt="Фото белой кошечки">
                     </div>
                     <div class="gallery__item gallery__item-bottom">
-                        <img src="" alt="">
+                        <img src="./images/pets-list-2-desktop@1x.png" alt="Фото коричневого кота">
                     </div>
                     <div class="gallery__item gallery__item-large gallery__item-active">
-                        <img src="" alt="">
+                        <img src="./images/pets-list-3-desktop@1x.png" alt="Фото серого кота">
                     </div>
                 </div>
                 <button class="slider__button slider__button-prev" type="button">
@@ -90,7 +107,7 @@
                 Приобретая в свой дом этого питомца, вы получите
                 умное животное, которому нет равных </p>
             <div class="breed__image">
-                <img src="" alt="">
+                <img src="./images/breed-features-desktop@1x.png" alt="Фото Мейн-куна">
             </div>
             <ul class="breed__features">
                 <li class="breed__features-item breed__features-easy">Легко уживается в семьях с детьми или другими
@@ -169,7 +186,7 @@
             <div class="team__slider">
                 <div class="team__slider-single__slide">
                     <div class="single__slide-image">
-                        <!--                        тут будет изображение-->
+                        <img src="./images/employee-1-desktop@1x.jpg" alt="Фото сотрудника">
                     </div>
                     <div class="team__slider-main">
                         <blockquote>
@@ -255,7 +272,7 @@
             <div class="reviews__slider">
                 <div class="reviews__item">
                     <div class="reviews__item-image">
-                        <!--                        здесь будет фото-->
+                        <img src="./images/reviewer-1-desktop@1x.jpg" alt="Фото автора отзыва">
                     </div>
                     <div class="reviews__item-main">
                         <blockquote>
