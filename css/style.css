@@ -14,6 +14,27 @@ a {
     text-decoration: none;
 }
 
+/* Тут просто скопирован дефолтный стиль для visually-hidden */
+.visually-hidden:not(:focus):not(:active) {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    white-space: nowrap;
+    border: 0;
+    clip-path: inset(100%);
+}
+
+.container__centered {
+    position: relative;
+    max-width: 1286px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
 .section__title {
     font-family: Yeseva One, sans-serif;
 
@@ -60,12 +81,44 @@ a {
     background-color: #1F1C1D;
 }
 
-/* Intro */
+.logo {
+    height: 21px;
+    width: 55px;
+}
 
-.intro-info {
+/* Header */
+
+.main-header {
+    box-sizing: border-box;
+    min-height: 100vh;
+    padding-top: 50px;
+    position: relative;
+    background-color: #151313;
+}
+
+.header__logo {
+    margin: 0 auto;
+}
+
+.header__background-image {
+    position: absolute;
+    width: 1068px;
+    height: 712px;
+    right: 0;
+    bottom: 0;
+
     background-image: url("../images/main-cat-desktop@1x.png");
     background-repeat: no-repeat;
     background-position: right;
+}
+
+.intro-info {
+    position: absolute;
+    height: 462px;
+    width: 622px;
+    left: 202px;
+    top: 30vh;
+
 }
 
 .intro__city {
@@ -78,8 +131,9 @@ a {
 }
 
 .intro__title {
-    font-family: Yeseva One, sans-serif;
-
+    font-family: Yeseva One, cursive;
+    font-style: normal;
+    font-weight: normal;
     font-size: 52px;
     line-height: 60px;
 
@@ -93,6 +147,24 @@ a {
     line-height: 24px;
 
     color: #A07B50;
+}
+
+.decor__element-vertical__line {
+    width: 1px;
+    margin: 0 auto;
+}
+
+.icon {
+    display: block;
+    margin: 15px auto;
+}
+
+.intro__social {
+    position: absolute;
+    width: 15px;
+    height: 170px;
+    bottom: 65px;
+    left: 80px;
 }
 
 /* Pets */

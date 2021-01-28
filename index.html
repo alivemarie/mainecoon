@@ -5,55 +5,62 @@
     <meta name="description" content="Питомник Мейн-Кунов в Новосибирске. Первый питомник с расширенным спектром услуг">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Питомник Мейн-Кунов</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <header class="main-header">
     <div class="header__logo logo">
-        <svg class="icon">
+        <svg class="icon" width="55" height="25">
             <use xlink:href="images/icons/sprite.svg#crown"></use>
         </svg>
     </div>
+    <div class="header__background-image"></div>
+    <div class="intro-info">
+        <p class="intro__city">Новосибирск</p>
+        <h1 class="intro__title">Питомник Мейн-кунов</h1>
+        <p class="intro__lead">Первый питомник с расширенным
+            спектром услуг</p>
+        <a href="#" class="btn">Смотреть котиков</a>
+    </div>
+    <ul class="social intro__social">
+        <li>
+            <div class="decor__element-vertical__line">
+                <svg class="icon" width="1px" height="78px">
+                    <use xlink:href="images/icons/sprite.svg#decor-vertical-line"></use>
+                </svg>
+            </div>
+        </li>
+        <li class="social__item">
+            <a href="#" class="social__link">
+                <span class="visually-hidden">Вконтакте</span>
+                <svg class="icon" width="13px" height="8px">
+                    <use xlink:href="images/icons/sprite.svg#icon-vk"></use>
+                </svg>
+            </a>
+        </li>
+        <li class="social__item">
+            <a href="#" class="social__link">
+                <span class="visually-hidden">Твиттер</span>
+                <svg class="icon" width="16px" height="11px">
+                    <use xlink:href="images/icons/sprite.svg#icon-twitter"></use>
+                </svg>
+            </a>
+        </li>
+        <li class="social__item">
+            <a href="#" class="social__link">
+                <span class="visually-hidden">Фейсбук</span>
+                <svg class="icon" width="6px" height="11px">
+                    <use xlink:href="images/icons/sprite.svg#icon-fb"></use>
+                </svg>
+            </a>
+        </li>
+    </ul>
 </header>
 
 <main>
-    <section class="section intro">
-        <div class="intro-info">
-            <p class="intro__city">Новосибирск</p>
-            <h1 class="intro__title">Питомник Мейн-кунов</h1>
-            <p class="intro__lead">Первый питомник с расширенным
-                спектром услуг</p>
-            <a href="#" class="btn">Смотреть котиков</a>
-        </div>
-        <ul class="social intro__social">
-            <li class="social__item">
-                <a href="#" class="social__link">
-                    <span class="visually-hidden">Вконтакте</span>
-                    <svg class="icon">
-                        <use xlink:href="images/icons/sprite.svg#icon-vk"></use>
-                    </svg>
-                </a>
-            </li>
-            <li class="social__item">
-                <a href="#" class="social__link">
-                    <span class="visually-hidden">Твиттер</span>
-                    <svg class="icon">
-                        <use xlink:href="images/icons/sprite.svg#icon-twitter"></use>
-                    </svg>
-                </a>
-            </li>
-            <li class="social__item">
-                <a href="#" class="social__link">
-                    <span class="visually-hidden">Фейсбук</span>
-                    <svg class="icon">
-                        <use xlink:href="images/icons/sprite.svg#icon-fb"></use>
-                    </svg>
-                </a>
-            </li>
-        </ul>
-    </section>
-
     <section class="section pets">
         <div class="container__centered container__pets">
             <h2 class="section__title pets__title">Питомцы</h2>
