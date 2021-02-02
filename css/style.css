@@ -382,7 +382,43 @@ a {
 
 /* Advantages */
 
+.advantages__lead {
+    width: 430px;
+    margin: 0 auto;
+}
+
+.advantages__list {
+    margin: 50px auto 100px;
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.advantages__item {
+    width: 360px;
+    height: 301px;
+    background-color: #1F1C1D;
+
+}
+
 .advantages__link {
+    display: block;
+    position: relative;
+    width: 320px;
+    height: 267px;
+    margin: 20px;
+    vertical-align: middle;
+    transition: background-color 0.3s ease-out, fill 0.3s ease-out, stroke 0.3s ease-out;
+    color: #FFFFFF;
+}
+
+.advantages__link span {
+    position: absolute;
+    width: 255px;
+    height: 53px;
+    left: 50%;
+    bottom: 40px;
+    transform: translateX(-50%);
     font-family: Roboto, sans-serif;
 
     font-weight: 300;
@@ -391,10 +427,32 @@ a {
     text-align: center;
 
     color: #FFFFFF;
-
 }
 
-/* Care */
+.advantages__link:hover {
+    background-color: #a07b50;
+}
+
+.advantages__link:hover .big-icon {
+    fill: #ffffff;
+    stroke: #a07b50;
+}
+
+.big-icon {
+    position: absolute;
+    left: 50%;
+    top: 30px;
+    transform: translateX(-50%);
+
+    fill: #a07b50;
+    stroke-width: 2;
+    stroke: #1f1c1d;
+    transition: fill 0.3s ease-out, stroke 0.3s ease-out;
+}
+
+
+
+    /* Care */
 
 .care {
     background-image: url("../images/bg-care-desktop@1x.jpg");
