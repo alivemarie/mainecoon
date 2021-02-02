@@ -117,7 +117,7 @@ a {
     height: 462px;
     width: 622px;
     left: 202px;
-    top: 30vh;
+    top: 20vh;
 
 }
 
@@ -256,15 +256,128 @@ a {
 
 /* Breed */
 
+.breed {
+    min-height: 980px;
+    box-sizing: border-box;
+    position: relative;
+    padding-top: 20px;
+}
+
+.breed__lead {
+    margin: 0 auto;
+    width: 735px;
+}
+
+.breed__image {
+    position: absolute;
+    width: 623px;
+    height: 908px;
+    left: 415px;
+    top: 160px;
+    z-index: 1;
+}
+
+.breed__image:before {
+    content: "";
+    position: absolute;
+    top: 105px;
+    left: 24px;
+    z-index: -1;
+    width: 519px;
+    height: 519px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.35);
+}
+
+.breed__image:after {
+    content: "";
+    position: absolute;
+    top: 49px;
+    left: -30px;
+    z-index: -1;
+    border-radius: 50%;
+    width: 631px;
+    height: 631px;
+    border: 1px solid #a07b50;
+}
+
+.breed__features {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    font-family: "Roboto", "Arial", sans-serif;
+}
+
 .breed__features-item {
-    font-family: Roboto, sans-serif;
 
     font-weight: 300;
-    font-size: 14px;
-    line-height: 21px;
+    font-size: 16px;
+    line-height: 25px;
     text-align: right;
 
     color: #FFFFFF;
+
+    position: relative;
+}
+
+.breed__features-item:before {
+    content: "";
+    position: absolute;
+    top: 7px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #a07b50;
+}
+
+.breed__features-easy {
+    font-size: 14px;
+    line-height: 21px;
+    top: 343px;
+    left: -409px;
+    max-width: 255px;
+    text-align: right;
+}
+
+.breed__features-easy:before {
+    right: -39px;
+}
+
+.breed__features-dog {
+    top: 411px;
+    right: -482px;
+    max-width: 201px;
+}
+
+.breed__features-dog:before {
+    top: 3px;
+    left: -33px;
+}
+
+.breed__features-weight {
+    top: 534px;
+    right: -444px;
+    max-width: 160px;
+}
+
+.breed__features-weight:before {
+    top: 6px;
+    left: -33px;
+}
+
+.breed__features-lynx {
+    max-width: 200px;
+    top: 538px;
+    left: -370px;
+    text-align: right;
+}
+
+.breed__features-lynx:before {
+    right: -31px;
 }
 
 /* Advantages */
