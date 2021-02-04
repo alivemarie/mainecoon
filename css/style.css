@@ -452,17 +452,54 @@ a {
 
 
 
-    /* Care */
+/* Care */
 
 .care {
+    box-sizing: border-box;
+    height: 645px;
+    padding: 84px 0;
     background-image: url("../images/bg-care-desktop@1x.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.care__link-title {
-    font-family: Roboto, sans-serif;
+.care__list {
+    display: flex;
+    padding: 0;
+    margin: 0 auto;
+    width: 1160px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
 
+.care__item {
+    width: 559px;
+    height: 165px;
+    position: relative;
+    margin-bottom: 43px;
+    border: 1px #a07b50 solid;
+}
+
+.care__item:after {
+    content: "ᐳ";
+    color: white;
+    text-align: center;
+    line-height: 165px;
+    display: block;
+    position: absolute;
+    height: 165px;
+    width: 60px;
+    right: 0;
+    top: 0;
+    background-color: #a07b50;
+}
+
+.care__link-title {
+    position: absolute;
+    top: 38px;
+    left: 59px;
+    margin: 0;
+    font-family: Roboto, sans-serif;
     font-weight: bold;
     font-size: 22px;
     line-height: 26px;
@@ -471,8 +508,12 @@ a {
 }
 
 .care__link-description {
-    font-family: Roboto, sans-serif;
+    position: absolute;
+    top: 60px;
+    left: 59px;
+    width: 420px;
 
+    font-family: Roboto, sans-serif;
     font-weight: 300;
     font-size: 14px;
     line-height: 23px;
