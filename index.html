@@ -202,11 +202,11 @@
             <div class="team__slider">
                 <div class="team__slider-single__slide">
                     <div class="single__slide-image">
-                        <img src="./images/employee-1-desktop@1x.jpg" alt="Фото сотрудника">
+                        <img src="./images/employee-1-desktop@1x.jpg" width="360" height="356" alt="Фото сотрудника">
                     </div>
                     <div class="team__slider-main">
                         <blockquote>
-                            <cite>
+                            <cite class="team__member-quote__author">
                                 <span class="team__member-title">Серёжа Попов</span>
                                 <b class="team__member-jobTitle">Основатель питомника</b>
                             </cite>
@@ -216,13 +216,28 @@
                         </blockquote>
                         <ul class="social team__social">
                             <li class="social__item">
-                                <a href="#" class="social__link">ВКонтакте</a>
+                                <a href="#" class="social__link">
+                                    <span class="visually-hidden">Вконтакте</span>
+                                    <svg class="icon" width="13px" height="8px">
+                                        <use xlink:href="images/icons/sprite.svg#icon-vk"></use>
+                                    </svg>
+                                </a>
                             </li>
                             <li class="social__item">
-                                <a href="#" class="social__link">Твиттер</a>
+                                <a href="#" class="social__link">
+                                    <span class="visually-hidden">Твиттер</span>
+                                    <svg class="icon" width="16px" height="11px">
+                                        <use xlink:href="images/icons/sprite.svg#icon-twitter"></use>
+                                    </svg>
+                                </a>
                             </li>
                             <li class="social__item">
-                                <a href="#" class="social__link">Фейсбук</a>
+                                <a href="#" class="social__link">
+                                    <span class="visually-hidden">Фейсбук</span>
+                                    <svg class="icon" width="6px" height="11px">
+                                        <use xlink:href="images/icons/sprite.svg#icon-fb"></use>
+                                    </svg>
+                                </a>
                             </li>
                         </ul>
                     </div>
