@@ -14,6 +14,10 @@ a {
     text-decoration: none;
 }
 
+details summary::-webkit-details-marker {
+    display:none;
+}
+
 /* Тут просто скопирован дефолтный стиль для visually-hidden */
 .visually-hidden:not(:focus):not(:active) {
     position: absolute;
@@ -666,20 +670,168 @@ a {
 
 /* FAQ */
 
-.faq__question {
-    font-family: Roboto, sans-serif;
+.faq {
+    padding: 60px 0;
+    min-height: 1100px;
+}
 
+.faq__lead {
+    width: 380px;
+    margin: 0 auto;
+}
+
+.faq__list {
+    padding: 0;
+    width: 909px;
+    margin: 40px auto;
+}
+
+.faq__item {
+    box-sizing: content-box;
+    display: block;
+    width: 100%;
+    min-height: 110px;
+    margin-bottom: 40px;
+}
+
+.faq__item--zeroOne {
+    position: relative;
+}
+
+.faq__item--zeroOne:before {
+    position: absolute;
+    display: block;
+    width: 114px;
+    height: 110px;
+    left: 0;
+    top: 0;
+    content: "01";
+    font-family: Roboto, sans-serif;
+    font-size: 70px;
+    color: #a07b50;
+    font-weight: bold;
+    line-height: 110px;
+}
+
+.faq__item--zeroTwo {
+    position: relative;
+}
+
+.faq__item--zeroTwo:before {
+    position: absolute;
+    display: block;
+    width: 114px;
+    height: 110px;
+    left: 0;
+    top: 0;
+    content: "02";
+    font-family: Roboto, sans-serif;
+    font-size: 70px;
+    color: #a07b50;
+    font-weight: bold;
+    line-height: 110px;
+}
+
+.faq__item--zeroThree {
+    position: relative;
+}
+
+.faq__item--zeroThree:before {
+    position: absolute;
+    display: block;
+    width: 114px;
+    height: 110px;
+    left: 0;
+    top: 0;
+    content: "03";
+    font-family: Roboto, sans-serif;
+    font-size: 70px;
+    color: #a07b50;
+    font-weight: bold;
+    line-height: 110px;
+}
+
+.faq__item--zeroFour {
+    position: relative;
+}
+
+.faq__item--zeroFour:before {
+    position: absolute;
+    display: block;
+    width: 114px;
+    height: 110px;
+    left: 0;
+    top: 0;
+    content: "04";
+    font-family: Roboto, sans-serif;
+    font-size: 70px;
+    color: #a07b50;
+    font-weight: bold;
+    line-height: 110px;
+}
+
+faq__item-spoiler {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.faq__question {
+    box-sizing: content-box;
+    position: absolute;
+    left: 115px;
+    top: 0;
+    height: 110px;
+    font-family: Roboto, sans-serif;
+    padding-left: 40px;
     font-weight: 500;
     font-size: 16px;
-    line-height: 19px;
+    line-height: 110px;
 
     color: #DDD0C3;
-
     background-color: transparent;
-    border: none;
+    width: 752px;
+
+    border: 1px #a07b50 solid;
+}
+
+.faq__question:after {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    content: "−";
+    width: 102px;
+    height: 110px;
+    border-left: 1px #a07b50 solid;
+    color: #a07b50;
+    text-align: center;
+    font-size: 30px;
+    line-height: 110px;
+}
+
+.faq__question:focus {
+    border: 1px #a07b50 solid;
+    outline: none;
+}
+
+.faq__item-spoiler[open] .faq__question:after {
+    content: "+";
+    background-color: #a07b50;
+    color: #ffffff;
+}
+
+.faq__item-spoiler[open] {
+    height: 360px;
 }
 
 .faq__answer {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 40px 110px 40px 40px;
+    position: absolute;
+    top: 110px;
+    left: 115px;
     font-family: Roboto, sans-serif;
 
     font-weight: 300;
@@ -687,6 +839,9 @@ a {
     line-height: 154%;
 
     color: #DDD0C3;
+
+    border: 1px #a07b50 solid;
+    border-top: none;
 }
 
 /* Reviews */
