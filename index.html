@@ -327,7 +327,7 @@
             <div class="reviews__slider">
                 <div class="reviews__item">
                     <div class="reviews__item-image">
-                        <img src="./images/reviewer-1-desktop@1x.jpg" alt="Фото автора отзыва">
+                        <img width="481" height="331" src="./images/reviewer-1-desktop@1x.jpg" alt="Фото автора отзыва">
                     </div>
                     <div class="reviews__item-main">
                         <blockquote>
@@ -337,16 +337,26 @@
                                 воспитан. Огромным плюсом питомника является возможность консультироваться
                                 в любое время
                             </p>
+                            <time class="review__datetime" datetime="2018-05-24">24 мая 2018</time>
+                            <ul class="social review__social">
+                                <li class="social__item">
+                                    <a href="#" class="social__link reviews__social">
+                                        <span class="visually-hidden">Вконтакте</span>
+                                        <svg class="icon reviews__icon" width="13px" height="8px">
+                                            <use xlink:href="images/icons/sprite.svg#icon-vk"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social__item">
+                                    <a href="#" class="social__link reviews__social">
+                                        <span class="visually-hidden">Твиттер</span>
+                                        <svg class="icon reviews__icon" width="16px" height="11px">
+                                            <use xlink:href="images/icons/sprite.svg#icon-twitter"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
                         </blockquote>
-                        <time class="review__datetime" datetime="2018-05-24">24 мая 2018</time>
-                        <ul class="social review__social">
-                            <li class="social__item">
-                                <a href="#" class="social__link">ВКонтакте</a>
-                            </li>
-                            <li class="social__item">
-                                <a href="#" class="social__link">Твиттер</a>
-                            </li>
-                        </ul>
                     </div>
                 </div>
                 <button type="button" class="reviews__button reviews__button-prev">
@@ -363,7 +373,9 @@
 <footer class="footer">
     <div class="container__centered container__footer">
         <div class="footer__logo">
-            <img class="logo" src="" alt="Логотип питомника">
+            <svg class="icon" width="55" height="25">
+                <use xlink:href="images/icons/sprite.svg#crown"></use>
+            </svg>
         </div>
         <ul class="social footer__social">
             <li class="social__item">

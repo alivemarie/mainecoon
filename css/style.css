@@ -32,6 +32,10 @@ details summary::-webkit-details-marker {
     clip-path: inset(100%);
 }
 
+.social__link {
+    fill: white;
+}
+
 .container__centered {
     position: relative;
     max-width: 1286px;
@@ -387,6 +391,10 @@ details summary::-webkit-details-marker {
 
 /* Advantages */
 
+.advantages {
+    padding-top: 70px;
+}
+
 .advantages__lead {
     width: 430px;
     margin: 0 auto;
@@ -671,8 +679,8 @@ details summary::-webkit-details-marker {
 /* FAQ */
 
 .faq {
-    padding: 60px 0;
-    min-height: 1100px;
+    padding: 60px 0 0 0;
+    min-height: 800px;
 }
 
 .faq__lead {
@@ -692,6 +700,7 @@ details summary::-webkit-details-marker {
     width: 100%;
     min-height: 110px;
     margin-bottom: 40px;
+    cursor: pointer;
 }
 
 .faq__item--zeroOne {
@@ -846,6 +855,49 @@ faq__item-spoiler {
 
 /* Reviews */
 
+.reviews {
+    padding: 40px 0;
+}
+
+.reviews__title {
+    margin-bottom: 60px;
+}
+
+.reviews__slider {
+    margin: 0 auto;
+    width: 1000px;
+    height: 500px;
+}
+
+.reviews__item {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.reviews__item-image {
+    position: absolute;
+    top: 46px;
+    left: 0;
+    z-index: 2;
+}
+
+.reviews__item-main {
+    width: 640px;
+    height: 408px;
+    background-color: #151313;
+    float: right;
+    position: relative;
+}
+
+.reviews__item-main blockquote {
+    position: absolute;
+    width: 408px;
+    height: 192px;
+    top: 109px;
+    left: 145px;
+}
+
 .review__username {
     font-family: Roboto, sans-serif;
     font-style: normal;
@@ -864,15 +916,50 @@ faq__item-spoiler {
     line-height: 23px;
 
     color: rgba(255, 255, 255, 0.72);
+    margin-bottom: 40px;
 }
 
 .review__datetime {
+    float: left;
     font-family: Roboto, sans-serif;
 
     font-size: 12px;
     line-height: 19px;
 
     color: rgba(160, 123, 80, 0.94);
+}
+
+.review__social {
+    display: flex;
+    width: 90px;
+    justify-content: space-around;
+}
+
+.reviews__social {
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    border: 1px solid #a07b50;
+    transition: border-color 0.3s ease-out;
+}
+
+.reviews__social:hover,
+.reviews__social:focus {
+    border-color: #ffffff;
+}
+
+.reviews__social:hover svg,
+.reviews__social:focus svg {
+    fill: #ffffff;
+}
+
+.reviews__icon {
+    margin: 30% auto;
+    fill: #a07b50;
+}
+
+.reviews__button {
+    display: none;
 }
 
 /* Footer */
