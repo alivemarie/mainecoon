@@ -401,12 +401,11 @@ details summary::-webkit-details-marker {
 }
 
 .breed__image {
-    position: absolute;
-    width: 623px;
-    height: 908px;
-    left: 415px;
-    top: 160px;
+    margin: 0 auto;
+    width: 602px;
+    height: 690px;
     z-index: 1;
+    position: relative;
 }
 
 .breed__image:before {
@@ -470,18 +469,18 @@ details summary::-webkit-details-marker {
     font-size: 14px;
     line-height: 21px;
     top: 343px;
-    left: -409px;
+    left: -440px;
     max-width: 255px;
     text-align: right;
 }
 
 .breed__features-easy:before {
-    right: -39px;
+    right: -34px;
 }
 
 .breed__features-dog {
     top: 411px;
-    right: -482px;
+    right: -449px;
     max-width: 201px;
 }
 
@@ -492,7 +491,7 @@ details summary::-webkit-details-marker {
 
 .breed__features-weight {
     top: 534px;
-    right: -444px;
+    right: -406px;
     max-width: 160px;
 }
 
@@ -504,7 +503,7 @@ details summary::-webkit-details-marker {
 .breed__features-lynx {
     max-width: 200px;
     top: 538px;
-    left: -370px;
+    left: -400px;
     text-align: right;
 }
 
