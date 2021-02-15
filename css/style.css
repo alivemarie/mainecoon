@@ -408,6 +408,18 @@ details summary::-webkit-details-marker {
     position: relative;
 }
 
+@media (max-width: 1023px) {
+    .breed__image {
+        margin-top: 40px;
+        width: 410px;
+        height: 600px;
+    }
+    .breed__image img {
+        width: 400px;
+        height: 439px;
+    }
+}
+
 .breed__image:before {
     content: "";
     position: absolute;
@@ -430,6 +442,32 @@ details summary::-webkit-details-marker {
     width: 631px;
     height: 631px;
     border: 1px solid #a07b50;
+}
+
+@media (max-width: 1023px) {
+    .breed__image:before {
+        content: "";
+        position: absolute;
+        top: 95px;
+        left: 24px;
+        z-index: -1;
+        width: 342px;
+        height: 342px;
+        border-radius: 50%;
+        background-color: rgba(0, 0, 0, 0.35);
+    }
+
+    .breed__image:after {
+        content: "";
+        position: absolute;
+        top: 49px;
+        left: -20px;
+        z-index: -1;
+        border-radius: 50%;
+        width: 425px;
+        height: 425px;
+        border: 1px solid #a07b50;
+    }
 }
 
 .breed__features {
@@ -478,6 +516,18 @@ details summary::-webkit-details-marker {
     right: -34px;
 }
 
+@media (max-width: 1023px) {
+    .breed__features-easy {
+        top: 343px;
+        left: -275px;
+        max-width: 145px;
+    }
+
+    .breed__features-easy:before {
+        right: -34px;
+    }
+}
+
 .breed__features-dog {
     top: 411px;
     right: -449px;
@@ -487,6 +537,19 @@ details summary::-webkit-details-marker {
 .breed__features-dog:before {
     top: 3px;
     left: -33px;
+}
+
+@media (max-width: 1023px) {
+    .breed__features-dog {
+        top: 343px;
+        right: -289px;
+        max-width: 130px;
+    }
+
+    .breed__features-dog:before {
+        top: 3px;
+        left: -26px;
+    }
 }
 
 .breed__features-weight {
@@ -500,6 +563,19 @@ details summary::-webkit-details-marker {
     left: -33px;
 }
 
+@media (max-width: 1023px) {
+    .breed__features-weight {
+        top: 394px;
+        right: -233px;
+        max-width: 160px;
+    }
+
+    .breed__features-weight:before {
+        top: 6px;
+        left: -33px;
+    }
+}
+
 .breed__features-lynx {
     max-width: 200px;
     top: 538px;
@@ -511,7 +587,19 @@ details summary::-webkit-details-marker {
     right: -31px;
 }
 
-/* Advantages */
+@media (max-width: 1023px) {
+    .breed__features-lynx {
+        max-width: 140px;
+        top: 438px;
+        left: -260px;
+    }
+
+    .breed__features-lynx:before {
+        right: -31px;
+    }
+}
+
+    /* Advantages */
 
 .advantages {
     padding-top: 70px;
