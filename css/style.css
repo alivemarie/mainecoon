@@ -1005,6 +1005,18 @@ details summary::-webkit-details-marker {
     background-color: #151313;
 }
 
+@media (max-width: 767px) {
+    .care__item {
+        width: 290px;
+        height: 171px;
+    }
+
+    .care__item:after {
+        height: 171px;
+        width: 46px;
+    }
+}
+
 
 .care__link-title {
     position: absolute;
@@ -1019,6 +1031,15 @@ details summary::-webkit-details-marker {
     color: #A07B50;
 }
 
+@media (max-width: 767px) {
+    .care__link-title {
+        top: 25px;
+        left: 25px;
+        font-size: 18px;
+        line-height: 21px;
+    }
+}
+
 .care__link-description {
     position: absolute;
     top: 60px;
@@ -1031,6 +1052,17 @@ details summary::-webkit-details-marker {
     line-height: 23px;
 
     color: #FFFFFF;
+}
+
+@media (max-width: 767px) {
+    .care__link-description {
+        top: auto;
+        bottom: 25px;
+        left: 25px;
+        width: 210px;
+        margin-bottom: 0;
+        line-height: 140%;
+    }
 }
 
 /* Team */
