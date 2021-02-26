@@ -46,7 +46,6 @@ details summary::-webkit-details-marker {
     margin: 0 auto;
     padding: 0 40px;
     max-width: 1286px;
-    overflow: hidden;
 }
 
 @media (max-width: 1023px) {
@@ -350,6 +349,12 @@ details summary::-webkit-details-marker {
     }
 }
 
+@media (max-width: 767px) {
+    .pets {
+        padding-top: 60px;
+    }
+}
+
 .pets__title {
     margin: 0 auto;
     width: 180px;
@@ -360,6 +365,12 @@ details summary::-webkit-details-marker {
     margin: 23px auto 38px;
     width: 516px;
     height: 53px;
+}
+
+@media (max-width: 767px) {
+    .pets__lead {
+        width: 282px;
+    }
 }
 
 .pets__list {
@@ -397,6 +408,13 @@ details summary::-webkit-details-marker {
     .pets__photo-slider {
         min-height: 500px;
         margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 767px) {
+    .pets__photo-slider {
+        min-height: 300px;
+        margin-bottom: 20px;
     }
 }
 
@@ -443,6 +461,16 @@ details summary::-webkit-details-marker {
     width: 518px;
 }
 
+@media (max-width: 767px) {
+    .gallery__item-top,
+    .gallery__item-bottom {
+        left: 0;
+        right: auto;
+        top:0;
+        display: none;
+    }
+}
+
 .gallery__item-large {
     width: calc(100% - 30px);
     max-width: 474px;
@@ -466,6 +494,16 @@ details summary::-webkit-details-marker {
     object-fit: cover;
 }
 
+@media (max-width: 767px) {
+    .gallery__item-large {
+        height: 300px;
+    }
+    .gallery__item-large img {
+        width: 234px;
+        height: 248px;
+    }
+}
+
 .slider__button {
     background-color: transparent;
     border: none;
@@ -473,6 +511,7 @@ details summary::-webkit-details-marker {
 
 .pets_btn {
     margin: 0 auto;
+    text-align: center;
 }
 
 /* Breed */
@@ -484,6 +523,17 @@ details summary::-webkit-details-marker {
     padding-top: 20px;
 }
 
+@media (max-width: 767px) {
+    .breed {
+        min-height: 850px;
+    }
+
+    .breed__title {
+        width: 190px;
+        margin: 0 auto 40px;
+    }
+}
+
 .breed__lead {
     margin: 0 auto;
     width: 735px;
@@ -492,6 +542,12 @@ details summary::-webkit-details-marker {
 @media (max-width: 1023px) {
     .breed__lead {
         width: 443px;
+    }
+}
+
+@media (max-width: 767px) {
+    .breed__lead {
+        width: 270px;
     }
 }
 
@@ -512,6 +568,18 @@ details summary::-webkit-details-marker {
     .breed__image img {
         width: 400px;
         height: 439px;
+    }
+}
+
+@media (max-width: 767px) {
+    .breed__image {
+        margin-top: 40px;
+        width: 268px;
+        height: 330px;
+    }
+    .breed__image img {
+        width: 267px;
+        height: 291px;
     }
 }
 
@@ -541,27 +609,30 @@ details summary::-webkit-details-marker {
 
 @media (max-width: 1023px) {
     .breed__image:before {
-        content: "";
-        position: absolute;
         top: 95px;
-        left: 24px;
-        z-index: -1;
         width: 342px;
         height: 342px;
-        border-radius: 50%;
-        background-color: rgba(0, 0, 0, 0.35);
     }
 
     .breed__image:after {
-        content: "";
-        position: absolute;
-        top: 49px;
         left: -20px;
-        z-index: -1;
-        border-radius: 50%;
         width: 425px;
         height: 425px;
-        border: 1px solid #a07b50;
+    }
+}
+
+@media (max-width: 767px) {
+    .breed__image:before {
+        top: 50px;
+        width: 230px;
+        height: 230px;
+    }
+
+    .breed__image:after {
+        top: 25px;
+        left: 0px;
+        width: 280px;
+        height: 280px;
     }
 }
 
@@ -576,8 +647,14 @@ details summary::-webkit-details-marker {
     font-family: "Roboto", "Arial", sans-serif;
 }
 
-.breed__features-item {
+@media (max-width: 767px) {
+    .breed__features {
+        top: 550px;
+        left: 150px;
+    }
+}
 
+.breed__features-item {
     font-weight: 300;
     font-size: 16px;
     line-height: 25px;
@@ -691,6 +768,30 @@ details summary::-webkit-details-marker {
 
     .breed__features-lynx:before {
         right: -31px;
+    }
+}
+
+@media (max-width: 767px) {
+    .breed__features-item {
+        color: white;
+        font-size: 14px;
+        line-height: 140%;
+        padding-left: 0;
+        top: 5px;
+        left: 0;
+        text-align: left;
+        max-width: none;
+    }
+
+    .breed__features-item:before {
+        width: 8px;
+        height: 8px;
+        top: 4px;
+        left: -18px;
+    }
+
+    .breed__features-item:not(:last-child) {
+        margin-bottom: 20px;
     }
 }
 
