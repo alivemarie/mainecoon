@@ -1077,6 +1077,15 @@ details summary::-webkit-details-marker {
     margin: 0 auto;
 }
 
+@media (max-width: 767px) {
+    .team {
+        height: 550px;
+    }
+    .team__lead {
+        width: 252px;
+    }
+}
+
 .team__slider {
     width: 1184px;
     margin: 0 auto;
@@ -1104,6 +1113,13 @@ details summary::-webkit-details-marker {
     }
 }
 
+@media (max-width: 767px) {
+    .team__slider-single__slide {
+        width: 290px;
+        height: 340px;
+    }
+}
+
 .single__slide-image {
     box-sizing: content-box;
     position: absolute;
@@ -1125,6 +1141,18 @@ details summary::-webkit-details-marker {
     }
 }
 
+@media (max-width: 767px) {
+    .single__slide-image {
+        top: 0px;
+        left: 82px;
+    }
+
+    .single__slide-image img {
+        width: 126px;
+        height: 126px;
+    }
+}
+
 .team__slider-main {
     width: 658px;
     height: 400px;
@@ -1136,16 +1164,6 @@ details summary::-webkit-details-marker {
     top: 0;
 }
 
-@media (max-width: 1023px) {
-    .team__slider-main {
-        box-sizing: border-box;
-        padding: 23px 25px;
-        height: 409px;
-        width: 647px;
-        right: auto;
-        left: 0;
-    }
-}
 
 .team__slider-main blockquote {
     width: 600px;
@@ -1155,8 +1173,32 @@ details summary::-webkit-details-marker {
 }
 
 @media (max-width: 1023px) {
+    .team__slider-main {
+        box-sizing: border-box;
+        padding: 23px 25px;
+        height: 409px;
+        width: 647px;
+        right: auto;
+        left: 0;
+    }
+
     .team__slider-main blockquote {
         margin: 0 auto;
+    }
+}
+
+@media (max-width: 767px) {
+    .team__slider-main {
+        top: 63px;
+        border: none;
+        padding: 0;
+        width: 290px;
+        height: 275px;
+    }
+
+    .team__slider-main blockquote {
+        width: 290px;
+        height: 275px;
     }
 }
 
@@ -1202,6 +1244,32 @@ details summary::-webkit-details-marker {
     color: rgba(255, 255, 255, 0.72);
 }
 
+@media (max-width: 767px) {
+    .team__member-quote__author {
+        width: 154px;
+        top: 80px;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+    }
+    .team__member-title {
+        font-size: 18px;
+    }
+
+    .team__member-jobTitle {
+        font-size: 14px;
+    }
+
+    .team__member-quote {
+        width: 263px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 14px;
+        line-height: 140%;
+        text-align: center;
+    }
+}
+
 .team__social {
     width: 60px;
     display: flex;
@@ -1239,6 +1307,8 @@ details summary::-webkit-details-marker {
     }
 
 }
+
+/*todo social for mobile*/
 
 .slider__button-prev,
 .team-slider__button-prev {
@@ -1289,6 +1359,20 @@ details summary::-webkit-details-marker {
         top: auto;
         bottom: 55px;
         right: 75px;
+    }
+}
+
+@media (max-width: 767px) {
+    .team-slider__button-prev {
+        top: 96px;
+        right: auto;
+        bottom: auto;
+        left: 60px;
+    }
+    .team-slider__button-next {
+        top: 96px;
+        bottom: auto;
+        right: 60px;
     }
 }
 
