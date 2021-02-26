@@ -15,7 +15,7 @@ a {
 }
 
 details summary::-webkit-details-marker {
-    display:none;
+    display: none;
 }
 
 /* Тут просто скопирован дефолтный стиль для visually-hidden */
@@ -250,6 +250,7 @@ details summary::-webkit-details-marker {
 
     color: #A07B50;
 }
+
 @media (max-width: 767px) {
     .intro__city {
         font-size: 14px;
@@ -275,6 +276,7 @@ details summary::-webkit-details-marker {
         margin-top: 20px;
     }
 }
+
 .intro__lead {
     font-family: Roboto, sans-serif;
 
@@ -318,6 +320,7 @@ details summary::-webkit-details-marker {
     .decor__element-vertical__line {
         display: none;
     }
+
     .intro__social {
         padding: 0;
         width: 80px;
@@ -336,6 +339,7 @@ details summary::-webkit-details-marker {
         display: none;
     }
 }
+
 /* Pets */
 
 .pets {
@@ -466,7 +470,7 @@ details summary::-webkit-details-marker {
     .gallery__item-bottom {
         left: 0;
         right: auto;
-        top:0;
+        top: 0;
         display: none;
     }
 }
@@ -498,6 +502,7 @@ details summary::-webkit-details-marker {
     .gallery__item-large {
         height: 300px;
     }
+
     .gallery__item-large img {
         width: 234px;
         height: 248px;
@@ -565,6 +570,7 @@ details summary::-webkit-details-marker {
         width: 410px;
         height: 600px;
     }
+
     .breed__image img {
         width: 400px;
         height: 439px;
@@ -577,6 +583,7 @@ details summary::-webkit-details-marker {
         width: 268px;
         height: 330px;
     }
+
     .breed__image img {
         width: 267px;
         height: 291px;
@@ -795,15 +802,32 @@ details summary::-webkit-details-marker {
     }
 }
 
-    /* Advantages */
+/* Advantages */
 
 .advantages {
     padding-top: 70px;
 }
 
+@media (max-width: 767px) {
+    .advantages {
+        padding-top: 60px;
+    }
+}
+
 .advantages__lead {
     width: 430px;
     margin: 0 auto;
+}
+
+@media (max-width: 767px) {
+    .advantages__title {
+        width: 184px;
+        margin: 35px auto;
+    }
+
+    .advantages__lead {
+        width: 284px;
+    }
 }
 
 .advantages__list {
@@ -820,6 +844,12 @@ details summary::-webkit-details-marker {
     }
 }
 
+@media (max-width: 767px) {
+    .advantages__list {
+        margin-bottom: 60px;
+    }
+}
+
 .advantages__item {
     width: 360px;
     height: 301px;
@@ -829,6 +859,13 @@ details summary::-webkit-details-marker {
 @media (max-width: 1023px) {
     .advantages__item {
         margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 767px) {
+    .advantages__item {
+        width: 290px;
+        height: 248px;
     }
 }
 
@@ -869,6 +906,19 @@ details summary::-webkit-details-marker {
     stroke: #a07b50;
 }
 
+@media (max-width: 767px) {
+    .advantages__link {
+        margin: 15px;
+        width: 260px;
+        height: 218px;
+    }
+
+    .advantages__link span {
+        font-size: 14px;
+        bottom: 30px;
+    }
+}
+
 .big-icon {
     position: absolute;
     left: 50%;
@@ -881,6 +931,12 @@ details summary::-webkit-details-marker {
     transition: fill 0.3s ease-out, stroke 0.3s ease-out;
 }
 
+@media (max-width: 767px) {
+    .big-icon {
+        width: 80px;
+        height: 88px;
+    }
+}
 
 
 /* Care */
@@ -944,6 +1000,7 @@ details summary::-webkit-details-marker {
 .care__item:hover {
     background-color: #151313;
 }
+
 .care__item:hover:after {
     background-color: #151313;
 }
@@ -1203,7 +1260,7 @@ details summary::-webkit-details-marker {
     }
 }
 
-    /* FAQ */
+/* FAQ */
 
 .faq {
     padding: 60px 0 0 0;
@@ -1247,18 +1304,18 @@ details summary::-webkit-details-marker {
 }
 
 .faq__item-spoiler:before {
-        position: absolute;
-        display: block;
-        width: 114px;
-        height: 110px;
-        left: 0;
-        top: 0;
-        content: "01";
-        font-family: Roboto, sans-serif;
-        font-size: 70px;
-        color: #a07b50;
-        font-weight: bold;
-        line-height: 110px;
+    position: absolute;
+    display: block;
+    width: 114px;
+    height: 110px;
+    left: 0;
+    top: 0;
+    content: "01";
+    font-family: Roboto, sans-serif;
+    font-size: 70px;
+    color: #a07b50;
+    font-weight: bold;
+    line-height: 110px;
 }
 
 .faq__item--zeroTwo:before {
@@ -1438,6 +1495,7 @@ details summary::-webkit-details-marker {
         width: 578px;
         height: 368px;
     }
+
     .reviews__item-main blockquote {
         margin: 0;
         width: 407px;
