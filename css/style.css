@@ -202,7 +202,6 @@ details summary::-webkit-details-marker {
     .header__background-image {
         width: 784px;
         height: 533px;
-        right: -50px;
         background-image: url("../images/main-cat-tablet@1x.png");
     }
 }
@@ -483,9 +482,10 @@ details summary::-webkit-details-marker {
 
 @media (max-width: 1023px) {
     .gallery__item-large {
+        width: 234px;
         position: absolute;
         top: 0;
-        left: 20%;
+        left: 15%;
         z-index: 2;
     }
 }
@@ -1878,6 +1878,24 @@ details summary::-webkit-details-marker {
     }
 }
 
+@media (max-width: 767px) {
+    .reviews__button-prev {
+        width: 10px;
+        top: 28%;
+        left: 37px;
+        background-image: url("../images/arrowPrev.svg");
+        z-index: 3;
+    }
+
+    .reviews__button-next {
+        width: 10px;
+        top: 28%;
+        right: 37px;
+        background-image: url("../images/arrowNext.svg");
+        z-index: 3;
+    }
+}
+
 .reviews__button-prev:hover,
 .reviews__button-next:hover {
     opacity: 1;
@@ -1901,6 +1919,18 @@ details summary::-webkit-details-marker {
 
     .footer__logo {
         display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .container__footer {
+        box-sizing: border-box;
+        height: 211px;
+        flex-direction: column-reverse;
+        padding: 30px 0;
+    }
+    .footer__logo {
+        display: block;
     }
 }
 
@@ -1929,6 +1959,15 @@ details summary::-webkit-details-marker {
 
     color: rgba(253, 242, 230, 0.83);
     transition: color 0.3s ease-out;
+}
+
+@media (max-width: 767px) {
+    .footer__link-address {
+        order: 4;
+    }
+    .footer__social {
+        margin: 0px;
+    }
 }
 
 .footer__link-address:hover {
