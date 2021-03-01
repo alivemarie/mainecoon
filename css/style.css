@@ -1267,6 +1267,7 @@ details summary::-webkit-details-marker {
         font-size: 14px;
         line-height: 140%;
         text-align: center;
+        margin-top: 0;
     }
 }
 
@@ -1308,7 +1309,28 @@ details summary::-webkit-details-marker {
 
 }
 
-/*todo social for mobile*/
+@media (max-width: 767px) {
+    .team__social {
+        width: 80px;
+        bottom: -20px;
+        right: 110px;
+    }
+
+    .team__social-icon__fb {
+        height: 15px;
+        width: 8px;
+    }
+
+    .team__social-icon__tw {
+        height: 12px;
+        width: 16px;
+    }
+
+    .team__social-icon__vk {
+        height: 10px;
+        width: 18px;
+    }
+}
 
 .slider__button-prev,
 .team-slider__button-prev {
