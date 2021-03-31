@@ -1892,7 +1892,8 @@ details summary::-webkit-details-marker {
 /* Footer */
 
 .container__footer {
-    width: auto;
+    width: 100%;
+    box-sizing: border-box;
     height: 156px;
     display: flex;
     justify-content: space-around;
@@ -1955,7 +1956,7 @@ details summary::-webkit-details-marker {
         order: 4;
     }
     .footer__social {
-        margin: 0px;
+        margin: 0;
     }
 }
 
