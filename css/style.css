@@ -639,7 +639,7 @@ details summary::-webkit-details-marker {
 
     .breed__image:after {
         top: 25px;
-        left: 0px;
+        left: 0;
         width: 280px;
         height: 280px;
     }
@@ -1106,6 +1106,9 @@ details summary::-webkit-details-marker {
 }
 
 @media (max-width: 1200px) {
+    .team__slider {
+        width: 649px;
+    }
     .team__slider-single__slide {
         height: 505px;
         width: 649px;
@@ -1142,7 +1145,7 @@ details summary::-webkit-details-marker {
 
 @media (max-width: 767px) {
     .single__slide-image {
-        top: 0px;
+        top: 0;
         left: 82px;
     }
 
@@ -1332,8 +1335,7 @@ details summary::-webkit-details-marker {
     }
 }
 
-.slider__button-prev,
-.team-slider__button-prev {
+.slider__button-prev {
     position: absolute;
     width: 31px;
     height: 31px;
@@ -1348,8 +1350,7 @@ details summary::-webkit-details-marker {
     transition: opacity 0.3s ease-out;
 }
 
-.slider__button-next,
-.team-slider__button-next {
+.slider__button-next {
     position: absolute;
     width: 31px;
     height: 31px;
@@ -1369,20 +1370,18 @@ details summary::-webkit-details-marker {
     opacity: 1;
 }
 
-/*todo locate arrows in relevance with the image*/
-
 @media (max-width: 1200px) {
     .team-slider__button-prev {
         top: auto;
         left: auto;
         bottom: 55px;
-        right: 350px;
+        right: 320px;
     }
 
     .team-slider__button-next {
         top: auto;
         bottom: 55px;
-        right: 75px;
+        right: 40px;
     }
 }
 
@@ -1640,7 +1639,7 @@ details summary::-webkit-details-marker {
     height: 500px;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1080px) {
     .reviews__slider {
         width: 578px;
         height: 593px;
@@ -1666,7 +1665,7 @@ details summary::-webkit-details-marker {
     z-index: 2;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1080px) {
     .reviews__item {
         padding-top: 83px;
     }
@@ -1710,7 +1709,7 @@ details summary::-webkit-details-marker {
     left: 145px;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1080px) {
     .reviews__item-main {
         margin: 95px 0;
         width: 578px;
@@ -1807,50 +1806,14 @@ details summary::-webkit-details-marker {
     fill: #a07b50;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1080px) {
     .review__details {
         width: 210px;
         margin: 0 auto;
     }
 }
 
-.reviews__button {
-    background-color: transparent;
-    border: none;
-    outline: none;
-}
-
-.reviews__button-prev {
-    position: absolute;
-    width: 31px;
-    height: 31px;
-    left: 0;
-    top: 50%;
-    display: block;
-    cursor: pointer;
-    background-image: url("../images/arrowPrev.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    opacity: 0.5;
-    transition: opacity 0.3s ease-out;
-}
-
-.reviews__button-next {
-    position: absolute;
-    width: 31px;
-    height: 31px;
-    right: 0;
-    top: 50%;
-    display: block;
-    cursor: pointer;
-    background-image: url("../images/arrowNext.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    opacity: 0.5;
-    transition: opacity 0.3s ease-out;
-}
-
-@media (max-width: 1023px) {
+@media (max-width: 1080px) {
     .reviews__button-prev {
         width: 60px;
         top: 35%;
@@ -1899,8 +1862,6 @@ details summary::-webkit-details-marker {
     justify-content: space-around;
     align-items: center;
 }
-
-/*todo fix footer for tablets*/
 
 @media (max-width: 1023px) {
     .container__footer {
