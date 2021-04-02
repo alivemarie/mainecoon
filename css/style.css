@@ -659,7 +659,6 @@ details summary::-webkit-details-marker {
 @media (max-width: 767px) {
     .breed__features {
         top: 550px;
-        left: 150px;
     }
 }
 
@@ -673,8 +672,6 @@ details summary::-webkit-details-marker {
 
     position: relative;
 }
-
-/*todo locate these dots correctly*/
 
 .breed__features-item:before {
     content: "";
@@ -690,19 +687,19 @@ details summary::-webkit-details-marker {
     font-size: 14px;
     line-height: 21px;
     top: 343px;
-    left: -440px;
+    left: -460px;
     max-width: 255px;
     text-align: right;
 }
 
 .breed__features-easy:before {
-    right: -34px;
+    right: -37px;
 }
 
 @media (max-width: 1200px) {
     .breed__features-easy {
         top: 343px;
-        left: -275px;
+        left: -295px;
         max-width: 145px;
     }
 
@@ -713,7 +710,7 @@ details summary::-webkit-details-marker {
 
 .breed__features-dog {
     top: 411px;
-    right: -449px;
+    right: -454px;
     max-width: 201px;
 }
 
@@ -731,50 +728,50 @@ details summary::-webkit-details-marker {
 
     .breed__features-dog:before {
         top: 3px;
-        left: -26px;
+        left: -18px;
     }
 }
 
 .breed__features-weight {
     top: 534px;
-    right: -406px;
+    right: -400px;
     max-width: 160px;
 }
 
 .breed__features-weight:before {
     top: 6px;
-    left: -33px;
+    left: -50px;
 }
 
 @media (max-width: 1200px) {
     .breed__features-weight {
-        top: 394px;
-        right: -233px;
+        top: 330px;
+        right: -270px;
         max-width: 160px;
     }
 
     .breed__features-weight:before {
         top: 6px;
-        left: -33px;
+        left: -42px;
     }
 }
 
 .breed__features-lynx {
     max-width: 200px;
-    top: 538px;
+    top: 520px;
     left: -400px;
     text-align: right;
 }
 
 .breed__features-lynx:before {
-    right: -31px;
+    right: -35px;
 }
 
 @media (max-width: 1200px) {
     .breed__features-lynx {
         max-width: 140px;
-        top: 438px;
-        left: -260px;
+        top: 380px;
+        left: -280px;
     }
 
     .breed__features-lynx:before {
